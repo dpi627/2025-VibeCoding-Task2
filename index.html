@@ -1,37 +1,302 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; max-width: 100%; }
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif; line-height: 1.6; }
-    img { max-width: 100%; height: auto; display: block; }
-    .container { width: 1920px; margin: 0 auto; padding: 16px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .col-12 { grid-column: span 12; }
-    @media (min-width: 768px) { .col-md-6 { grid-column: span 6; } }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brian Lee - 資深 .NET 軟體工程師，專注於全端開發、AI 應用整合與系統架構設計。擁有 20 年以上開發經驗，熱衷於技術創新與團隊協作。">
+  <title>Brian Lee - Software Developer | .NET 全端開發工程師</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="container" role="banner">
-    <nav aria-label="主選單">
-      <a href="#about">關於我</a>
-      <a href="#projects">作品集</a>
-      <a href="https://example.com/blog">技術部落格</a>
-      <a href="mailto:me@example.com">聯絡我</a>
-    </nav>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <h1>你好，我是小明：前端工程師新手之路</h1>
-    <p>歡迎來到我的個人網站！這裡整理了學習紀錄、Side Project 與實作心得。</p>
+  <!-- 動態背景 -->
+  <div class="animated-bg"></div>
+  
+  <!-- 導航列 -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">Brian Lee</div>
+      <ul class="nav-menu">
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#experience">經歷</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#contact">聯絡</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="profile-image">
+          <img src="./img/hex-dog.png" alt="Brian Lee 個人頭像">
+        </div>
+        <div class="hero-text">
+          <h1>Hi, I'm Brian :P</h1>
+          <p class="subtitle">Software Developer | .NET 全端工程師</p>
+          <p class="tagline">多年 .NET 開發經驗 · AI 應用整合專家 · 熱愛技術創新</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">聯絡我</a>
+            <a href="https://github.com/dpi627" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <footer class="container" role="contentinfo">
-    <p>© 2025 My Portfolio · <a href="#">GitHub</a></p>
-    <img src="https://source.unsplash.com/600x200/?technology,abstract" alt="">
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">🎯 關於我</h2>
+      <div class="about-content">
+        <div class="about-card">
+          <p>多年 .NET 開發經驗，包含 Web 與 Desktop App</p>
+        </div>
+        <div class="about-card">
+          <p>立志成為一名高效的全端開發者，並專注於優化用戶體驗</p>
+        </div>
+        <div class="about-card">
+          <p>熱愛學習新事物，與 AI 攜手前行，期待能改變世界</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">🌱 工作經歷</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2018 - 至今</div>
+          <div class="timeline-content">
+            <h3>SGS - Sr. Project Planner</h3>
+            <p class="duration">7 年 1 個月</p>
+            <ul>
+              <li>AI 落地方案研究與實作，導入多項 AI 應用</li>
+              <li>開發多項 NuGet 套件並建立內部共享服務</li>
+              <li>自建 Gitea 並進行 Git 內訓，協助團隊制定工作流程</li>
+              <li>協助部門導入 GitHub Copilot，啟用 AI 輔助開發</li>
+              <li>獨力完成多項自動化應用程式開發（訪談、規劃、開發、部署）</li>
+              <li>核心系統 LIMS 重構升級、開發與維運</li>
+              <li>協助日本分公司導入系統，完成數位轉型</li>
+              <li>派駐香港子公司，協助實驗流程數位化</li>
+            </ul>
+            <div class="tech-tags">
+              <span>.NET</span>
+              <span>MVC</span>
+              <span>WebAPI</span>
+              <span>EFCore</span>
+              <span>Azure OpenAI</span>
+              <span>Docker</span>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2017 - 2018</div>
+          <div class="timeline-content">
+            <h3>輔仁大學醫院 - 軟體工程師</h3>
+            <p class="duration">7 個月</p>
+            <ul>
+              <li>HIS 與相關系統，建置、開發與導入</li>
+            </ul>
+            <div class="tech-tags">
+              <span>.NET Framework</span>
+              <span>WebForm</span>
+              <span>WCF</span>
+              <span>Oracle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2007 - 2017</div>
+          <div class="timeline-content">
+            <h3>中華黃頁 - 資訊處主任</h3>
+            <p class="duration">10 年 2 個月</p>
+            <ul>
+              <li>全新開發核心系統 TCSC，並負責日常維運</li>
+              <li>全新開發帳務系統，後期並導入電子發票</li>
+              <li>管理四人以下團隊</li>
+            </ul>
+            <div class="tech-tags">
+              <span>.NET Framework</span>
+              <span>WebForm</span>
+              <span>MSSQL</span>
+              <span>Informix</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2004 - 2007</div>
+          <div class="timeline-content">
+            <h3>蕃薯藤 - 軟體工程師</h3>
+            <p class="duration">3 年 1 個月</p>
+            <ul>
+              <li>yam.com 入口網站維運</li>
+              <li>yam.com EC 系統前後台維運</li>
+              <li>開發各式行銷活動網站</li>
+            </ul>
+            <div class="tech-tags">
+              <span>.NET Framework</span>
+              <span>WebService</span>
+              <span>MSSQL</span>
+              <span>Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">🛠️ 技術技能</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>後端開發</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">.NET 8</span>
+            <span class="skill-tag">.NET 6</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">ASP.NET MVC</span>
+            <span class="skill-tag">WebAPI</span>
+            <span class="skill-tag">EF Core</span>
+            <span class="skill-tag">MSSQL</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3>前端開發</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>DevOps & 工具</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Gitea</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Azure DevOps</span>
+            <span class="skill-tag">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>AI & 新技術</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub Copilot</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">Azure OpenAI</span>
+            <span class="skill-tag">Ollama</span>
+            <span class="skill-tag">Dify</span>
+            <span class="skill-tag">n8n</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>其他技能</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Markdown</span>
+            <span class="skill-tag">YAML</span>
+            <span class="skill-tag">平面攝影</span>
+            <span class="skill-tag">視覺設計</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Education -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="two-columns">
+        <div class="column">
+          <h2 class="section-title">📜 認證資格</h2>
+          <div class="cert-list">
+            <div class="cert-item">
+              <span class="cert-badge">MCSD</span>
+              <span>Microsoft Certified Solutions Developer</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-badge">MCSA</span>
+              <span>Microsoft Certified Solutions Associate</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-badge">MCP</span>
+              <span>Microsoft Certified Professional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="section-title">🎓 學歷</h2>
+          <div class="education-item">
+            <h3>中原大學</h3>
+            <p>醫學工程學士</p>
+            <p class="year">1997 - 2001</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">🤖 聯絡方式</h2>
+      <div class="contact-grid">
+        <a href="mailto:dpi.studio@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-text">dpi.studio@gmail.com</span>
+        </a>
+        <a href="tel:+886919580627" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <span class="contact-text">+886-919-580-627</span>
+        </a>
+        <a href="https://github.com/dpi627" class="contact-card">
+          <span class="contact-icon">💻</span>
+          <span class="contact-text">GitHub</span>
+        </a>
+        <a href="https://www.facebook.com/dpistudio" class="contact-card">
+          <span class="contact-icon">👥</span>
+          <span class="contact-text">Facebook</span>
+        </a>
+        <a href="https://i-dpi.blogspot.com/" class="contact-card">
+          <span class="contact-icon">📝</span>
+          <span class="contact-text">生活紀錄</span>
+        </a>
+        <a href="https://dpimg.blogspot.com/" class="contact-card">
+          <span class="contact-icon">📷</span>
+          <span class="contact-text">婚宴紀錄</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Brian Lee. Built with AI: GitHub Copilot, ChatGPT, Claude</p>
+      <p>📍 New Taipei City, Taiwan</p>
+    </div>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
