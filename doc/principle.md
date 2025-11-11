@@ -1,0 +1,13 @@
+- HTML 只修改 index.html，不新增其他 HTML
+- HTML 結構<html> <head> <body> 都存在
+- <html lang="..."> 必填
+- <meta charset="UTF-8"> 存在
+- <title> 存在且非空
+- SEO<meta name="description"> 存在且長度 50–160
+- <h1> 有且僅有一個
+- 所有 <img> 都有非空 alt
+- 所有 <a> 有有效 href（不可空、不可純 #）
+- 響應式設計在 320px / 768px / 1440px 視窗寬度下，頁面 不得水平捲動
+- 如產生 CSS，請放在 ./css
+- 如產生 JavaScript，請放在 ./js
+- 請使用 ./img 內圖檔
